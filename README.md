@@ -76,6 +76,7 @@ src -- 源码目录
 - 在命令行中运行命令：`npm install`,下载相关依赖;
 - 在命令行中运行命令：`npm run dev`,运行项目;
 - 访问地址：[http://localhost:5173](http://localhost:5173)即可打开后台管理系统页面;
+- 局域网内可通过`http://<运行前端机器的IP>:5173`访问；若需要调用本地后端，请将`.env.development`中的`VITE_BASE_SERVER_URL`从`localhost`改为后端机器的局域网IP，例如`http://192.168.1.100:8080`，然后重启前端服务；
 - 具体部署过程请参考：[mall前端项目的安装与部署](https://www.macrozheng.com/mall/start/mall_deploy_web.html)
 - 前端自动化部署请参考：[使用Jenkins一键打包部署前端应用，就是这么6！](https://www.macrozheng.com/mall/reference/jenkins_vue.html)
 
